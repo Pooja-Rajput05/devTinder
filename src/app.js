@@ -4,13 +4,13 @@ const app = express();
 
 //response handler
 app.use("/test", (req, res) => {
-    res.send("hello from the server");
+    res.send("hello");
 })
 
 app.use("/hello", (req, res) => {
-    console.log("hello world");
+    res.send("hello wolrd");
 })
 
-app.listen(3000, () => {
+app.listen(7777, () => {
     console.log("server is listening...");
 });
